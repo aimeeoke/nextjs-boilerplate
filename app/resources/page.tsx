@@ -25,8 +25,12 @@ export default function ResourcesPage() {
 
       <h2>Wikis</h2>
       <ul>
-        <li>Training Grants Wiki — (Notion embed coming soon)</li>
-        <li>Research Day SOP — (Notion embed coming soon)</li>
+          <li>
+            <a href="/resources/wikis/20fafcab83d780eda9dcee1f02bdb5d3">
+            AI Tools for Literature Review (Notion)
+            </a>
+        </li>
+        <li>Custom GPT Prompt Library — (Notion embed coming soon)</li>
       </ul>
 
       <h2>Apps & Demos</h2>
