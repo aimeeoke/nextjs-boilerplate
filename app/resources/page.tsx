@@ -1,3 +1,5 @@
+import { WIKIS } from "../config/wikis";
+
 export default function ResourcesPage() {
   return (
     <section style={{maxWidth:960, margin:"2rem auto", padding:"0 1rem"}}>
@@ -25,12 +27,12 @@ export default function ResourcesPage() {
 
       <h2>Wikis</h2>
       <ul>
-          <li>
-            <a href="/resources/wikis/20fafcab83d780eda9dcee1f02bdb5d3">
-            AI Tools for Literature Review (Notion)
-            </a>
-        </li>
-        <li>Custom GPT Prompt Library — (Notion embed coming soon)</li>
+          {WIKIS.map(w => (
+            <li key=[w.slug}>
+              <a href={`/resources/wikis/${w.slug}`}>{w.title}</a>
+              {w.description ? ` — ${w.description}` : ""}
+            </li>
+        ))}
       </ul>
 
       <h2>Apps & Demos</h2>
