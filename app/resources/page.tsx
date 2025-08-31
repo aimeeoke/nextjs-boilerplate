@@ -26,14 +26,15 @@ export default function ResourcesPage() {
       </ul>
 
       <h2>Wikis</h2>
-      <ul>
-          {WIKIS.map(w => (
-            <li key=[w.slug}>
-              <a href={`/resources/wikis/${w.slug}`}>{w.title}</a>
-              {w.description ? ` — ${w.description}` : ""}
-            </li>
-        ))}
-      </ul>
+      <h2>Wikis</h2>
+<ul>
+  {WIKIS.map((w) => (
+    <li key={w.slug}>
+      <a href={`/resources/wikis/${w.slug}`}>{w.title}</a>
+      {w.description ? ` — ${w.description}` : ""}
+    </li>
+  ))}
+</ul>
 
       <h2>Apps & Demos</h2>
       <ul>
