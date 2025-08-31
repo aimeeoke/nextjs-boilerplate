@@ -29,7 +29,7 @@ export default function ResourcesPage() {
       <h2>Wikis</h2>
 <ul>
   {WIKIS.map((w) => (
-    <li key={w.slug}>
+    </li key={w.slug}>
       <a href={`/resources/wikis/${w.slug}`}>{w.title}</a>
       {w.description ? ` — ${w.description}` : ""}
     </li>
