@@ -15,4 +15,5 @@ export const WIKIS: WikiEntry[] = [
       "https://economic-waxflower-192.notion.site/ebd/20fafcab83d780eda9dcee1f02bdb5d3?v=20fafcab83d781ca8d24000ce9c3ed34",
     notionId: "20fafcab83d780eda9dcee1f02bdb5d3"
   }
+  //Add more wikis here later (paste a new object, mind the commas)
 ];
