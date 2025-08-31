@@ -6,7 +6,7 @@ export type WikiEntry = {
   notionId?: string;      // Optional: the raw Notion page ID (future native render)
 };
 
-export const WIKIS: WikiEntry[] = [
+export const WIKIS = [
   {
     slug: "literature-review",
     title: "AI Tools for Literature Review",
