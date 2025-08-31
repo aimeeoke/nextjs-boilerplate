@@ -1,4 +1,4 @@
-import { WIKIS } from "../config/wikis";
+import { WIKIS } from "../config/wikis";  // << relative import
 
 export default function ResourcesPage() {
   return (
