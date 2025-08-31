@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Aimee Oke — AI for Academia",
+  description: "Open-access GPTs, wikis, and apps for higher ed.",
+};
+
+
 export default function HomePage() {
   return (
     <section style={{maxWidth:960, margin:"2rem auto", padding:"0 1rem"}}>
