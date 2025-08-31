@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 // Prefer the alias below. If your editor complains, use the relative path: "../../../../config/wikis"
-import { WIKIS } from "@/app/config/wikis";
+import { WIKIS } from "../../../config/wikis";
 
 type Props = { params: { slug: string } };
 
