@@ -10,7 +10,10 @@
   "dependencies": {
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.5.2"
+    "next": "15.5.2",
+    "react-notion-x": "^7.2.5",
+    "notion-client": "^6.16.0",
+    "notion-utils": "^6.16.0"
   },
   "devDependencies": {
     "typescript": "^5",
