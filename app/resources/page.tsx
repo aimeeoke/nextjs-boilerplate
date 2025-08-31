@@ -1,24 +1,12 @@
 import { WIKIS } from "../config/wikis";
 
 const gpts = [
-  {
-    title: "Funding Opportunity Analyzer",
-    href: "YOUR-GPT-LINK",
-    desc: "Summarizes NIH NOFOs for fit & key requirements."
-  },
-  {
-    title: "Biosketch Builder",
-    href: "YOUR-GPT-LINK",
-    desc: "Mentoring philosophy + biosketch flow tailored to NIH."
-  }
+  { title: "Funding Opportunity Analyzer", href: "YOUR-GPT-LINK", desc: "Summarizes NIH NOFOs for fit & key requirements." },
+  { title: "Biosketch Builder", href: "YOUR-GPT-LINK", desc: "Mentoring philosophy + biosketch flow tailored to NIH." }
 ];
 
 const apps = [
-  {
-    title: "Collaboration Map (demo)",
-    href: "#",
-    desc: "Explore mentor co-pubs/co-awards. (Coming soon)"
-  }
+  { title: "Collaboration Map (demo)", href: "#", desc: "Explore mentor co-pubs/co-awards. (Coming soon)" }
 ];
 
 export default function ResourcesPage() {
@@ -44,7 +32,7 @@ export default function ResourcesPage() {
         {WIKIS.map((w) => (
           <a key={w.slug} className="card" href={`/resources/wikis/${w.slug}`} role="listitem">
             <h3>{w.title}</h3>
-            <p>{w.description ?? "Open guide"}{w.description ? "" : ""}</p>
+            <p>{w.description ?? "Open guide"}</p>
           </a>
         ))}
       </div>
