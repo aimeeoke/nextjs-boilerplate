@@ -1,7 +1,7 @@
 export const metadata = {
   title: "About Aimee Oke | AI for Research Administration",
   description:
-    "Aimee Oke helps research administrators build AI literacy and reduce administrative burden through practical, open-access tools and guidance.",
+    "How a research administrator with 21 years at Colorado State University became fluent in AI and started helping others do the same.",
 };
 
 export default function AboutPage() {
@@ -13,55 +13,6 @@ export default function AboutPage() {
     >
       <h1>About Aimee</h1>
 
-      {/* ===== PART 1: THE MISSION ===== */}
-      <section aria-labelledby="who-i-help">
-        <h2 id="who-i-help">Who I Help</h2>
-        <p>
-          I work with research administrators and research development professionals 
-          who know AI matters but aren't sure where to begin. If you've been meaning 
-          to learn this stuff, but the landscape feels overwhelming and your to-do 
-          list is already full, you're exactly who I built this site for.
-        </p>
-
-        <h2 id="why-this-matters">Why This Matters</h2>
-        <p>
-          Research administration is defined by deadlines, compliance, and the 
-          constant pressure to do more with less. AI can help, but most of what's 
-          out there is written for tech audiences, not for people managing training 
-          grants, coordinating proposals, or keeping programs running.
-        </p>
-        <p>
-          I believe the professionals closest to the work should be the ones shaping 
-          how AI gets used in research operations. That means building your own 
-          literacy, not waiting for someone else to hand you a policy.
-        </p>
-
-        <h2 id="how-i-help">How I Can Help</h2>
-        <p>
-          Everything on this site is open-access: custom GPTs, guides, templates, 
-          and practical starting points you can use today. I also share what I've 
-          learned through workshops, presentations, and collaborations with others 
-          working in this space.
-        </p>
-        <p>
-          I collaborated with{" "}
-          <a href="https://atomgrants.com" target="_blank" rel="noopener noreferrer">
-            Atom Grants
-          </a>{" "}
-          to create an <strong>AI Readiness Self-Assessment</strong> designed 
-          specifically for research development professionals. You can find it in 
-          the <a href="/resources">Resources</a> section.
-        </p>
-        <p>
-          My goal is simple: help you find your footing so you can reduce 
-          administrative burden and reclaim time for the work that actually 
-          requires your expertise.
-        </p>
-      </section>
-
-      <hr style={{ margin: "2.5rem 0", border: "none", borderTop: "1px solid #ddd" }} />
-
-      {/* ===== PART 2: MY STORY ===== */}
       <section aria-labelledby="my-story">
         <h2 id="my-story">My Story</h2>
         <p>
@@ -99,7 +50,7 @@ export default function AboutPage() {
         <h2 id="my-background">My Background</h2>
         <p>
           I'm not a computer scientist. I'm a research administrator with 21 years 
-          at Colorado State University, in the College of Veterinary 
+          at Colorado State University, most of them in the College of Veterinary 
           Medicine and Biomedical Sciences. I've contributed to 35+ NIH training 
           grant proposals, with 17 funded. I currently direct the Training Grant 
           Support Office and oversee programs supporting 60+ trainees each year.
@@ -115,9 +66,9 @@ export default function AboutPage() {
         <p>
           A year ago, I was figuring this out from scratch. There was no roadmap 
           and no one in my professional circle to ask. I built aimeeoke.ai to be 
-          the resource I wished I'd had: open-access tools, honest guidance, and 
-          practical starting points for research administrators who are ready to 
-          get started.
+          the resource I wished I'd had: open-access frameworks, honest guidance, 
+          and practical starting points for research administrators who are ready 
+          to get started.
         </p>
         <p>
           You don't need to go as deep as I did. But you do need someone who 
