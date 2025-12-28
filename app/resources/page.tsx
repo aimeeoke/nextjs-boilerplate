@@ -20,13 +20,7 @@ export default function ResourcesPage() {
       <section aria-labelledby="assess" style={{ marginTop: "2rem" }}>
         <h2 id="assess">Assess Where You Are</h2>
         <div className="grid" role="list">
-          
-            className="card"
-            href="https://atomgrants.com/resources"
-            target="_blank"
-            rel="noopener noreferrer"
-            role="listitem"
-          >
+          <a className="card" href="https://atomgrants.com/resources" target="_blank" rel="noopener noreferrer" role="listitem">
             <h3>AI Readiness Self-Assessment</h3>
             <p>
               A quick diagnostic I collaborated on with Atom Grants, designed 
@@ -85,11 +79,7 @@ export default function ResourcesPage() {
       <section aria-labelledby="coming-soon" style={{ marginTop: "2rem" }}>
         <h2 id="coming-soon">Coming Soon</h2>
         <div className="grid" role="list">
-          <div
-            className="card"
-            style={{ opacity: 0.6, cursor: "default" }}
-            role="listitem"
-          >
+          <div className="card" style={{ opacity: 0.6, cursor: "default" }} role="listitem">
             <h3>Understanding LLMs: A Visual Guide</h3>
             <p>
               An illustrated explainer of how large language models actually work. 
