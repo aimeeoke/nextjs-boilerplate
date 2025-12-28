@@ -39,7 +39,7 @@ export default function TalksPage() {
           </p>
           <p style={{ marginTop: "1rem" }}>
             <a 
-              href="/presentations/2025-CSU-AI-Symposium-Beyond-the-Scribe.pdf" 
+              href="/2025-CSU-AI-Symposium-Beyond-the-Scribe.pdf" 
               target="_blank"
               rel="noopener noreferrer"
             >
