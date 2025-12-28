@@ -1,52 +1,103 @@
-import { WIKIS } from "../config/wikis";
-
-const gpts = [
-  { title: "Funding Opportunity Analyzer", href: "YOUR-GPT-LINK", desc: "Summarizes NIH NOFOs for fit & key requirements." },
-  { title: "Biosketch Builder", href: "YOUR-GPT-LINK", desc: "Mentoring philosophy + biosketch flow tailored to NIH." }
-];
-
-const apps = [
-  { title: "Collaboration Map (demo)", href: "#", desc: "Explore mentor co-pubs/co-awards. (Coming soon)" }
-];
+export const metadata = {
+  title: "Resources | Aimee Oke",
+  description:
+    "Frameworks, guides, and curated resources to help research administrators integrate AI into their workflows.",
+};
 
 export default function ResourcesPage() {
   return (
-    <section style={{ maxWidth: 960, margin: "2rem auto", padding: "0 1rem" }}>
-      <h1>Resources for Academia</h1>
-      <p>Open-access assistants, wikis, and small apps to save time and reduce admin burden.</p>
+    <article
+      style={{ maxWidth: 720, margin: "2rem auto", padding: "0 1rem", lineHeight: 1.7 }}
+    >
+      <h1>Resources</h1>
+      <p>
+        Everything here is open-access and built for research administrators who 
+        want to start using AI practically and responsibly. Whether you're just 
+        getting oriented or ready to build your first workflow, there's a starting 
+        point for you.
+      </p>
 
-      {/* GPTs */}
-      <h2>Custom GPTs</h2>
-      <div className="grid" role="list">
-        {gpts.map((g) => (
-          <a key={g.title} className="card" href={g.href} target="_blank" rel="noopener noreferrer" role="listitem">
-            <h3>{g.title}</h3>
-            <p>{g.desc}</p>
+      <section aria-labelledby="assess" style={{ marginTop: "2rem" }}>
+        <h2 id="assess">Assess Where You Are</h2>
+        <div className="grid" role="list">
+          
+            className="card"
+            href="https://atomgrants.com/resources"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="listitem"
+          >
+            <h3>AI Readiness Self-Assessment</h3>
+            <p>
+              A quick diagnostic I collaborated on with Atom Grants, designed 
+              specifically for research development professionals.
+            </p>
           </a>
-        ))}
-      </div>
+        </div>
+      </section>
 
-      {/* Wikis (from your registry) */}
-      <h2>Wikis</h2>
-      <div className="grid" role="list">
-        {WIKIS.map((w) => (
-          <a key={w.slug} className="card" href={`/resources/wikis/${w.slug}`} role="listitem">
-            <h3>{w.title}</h3>
-            <p>{w.description ?? "Open guide"}</p>
+      <section aria-labelledby="frameworks" style={{ marginTop: "2rem" }}>
+        <h2 id="frameworks">Frameworks</h2>
+        <div className="grid" role="list">
+          <a className="card" href="/resources/context-readiness" role="listitem">
+            <h3>The 4 Hurdles: Context Readiness</h3>
+            <p>
+              Why most research offices struggle to get started with AI, and what 
+              to do about it.
+            </p>
           </a>
-        ))}
-      </div>
+          <a className="card" href="/resources/3d-framework" role="listitem">
+            <h3>The 3D Framework</h3>
+            <p>
+              Define, Develop, Deploy: a practical method for building AI workflows 
+              in higher ed.
+            </p>
+          </a>
+        </div>
+      </section>
 
-      {/* Apps */}
-      <h2>Apps & Demos</h2>
-      <div className="grid" role="list">
-        {apps.map((a) => (
-          <a key={a.title} className="card" href={a.href} role="listitem">
-            <h3>{a.title}</h3>
-            <p>{a.desc}</p>
+      <section aria-labelledby="learning" style={{ marginTop: "2rem" }}>
+        <h2 id="learning">Build Your AI Literacy</h2>
+        <div className="grid" role="list">
+          <a className="card" href="/resources/ai-literacy" role="listitem">
+            <h3>Curated Learning Resources</h3>
+            <p>
+              Podcasts, books, substacks, and courses I recommend for building 
+              real AI fluency.
+            </p>
           </a>
-        ))}
-      </div>
-    </section>
+        </div>
+      </section>
+
+      <section aria-labelledby="talks" style={{ marginTop: "2rem" }}>
+        <h2 id="talks">Talks and Presentations</h2>
+        <div className="grid" role="list">
+          <a className="card" href="/resources/talks" role="listitem">
+            <h3>Speaking and Workshops</h3>
+            <p>
+              Presentations I've given on AI workflows, literacy, and practical 
+              adoption in research administration.
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <section aria-labelledby="coming-soon" style={{ marginTop: "2rem" }}>
+        <h2 id="coming-soon">Coming Soon</h2>
+        <div className="grid" role="list">
+          <div
+            className="card"
+            style={{ opacity: 0.6, cursor: "default" }}
+            role="listitem"
+          >
+            <h3>Understanding LLMs: A Visual Guide</h3>
+            <p>
+              An illustrated explainer of how large language models actually work. 
+              Currently in development.
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
   );
 }
